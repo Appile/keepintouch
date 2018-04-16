@@ -80,7 +80,7 @@ const styleSectionHeader = (useColor) => {
 const styles = StyleSheet.create({
 	container: {
 		flex: 1,
-		paddingTop: 22,
+		paddingTop: 34,
 	},
 	contact: {
 		flex: 1,

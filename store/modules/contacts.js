@@ -1,49 +1,128 @@
 import _findIndex from 'lodash/findIndex'
+
 // Initial State
 const initialState = {
 	list: [
 		{
-			id: 1,
-			name: 'Angela Smangela',
-			avatar: 'https://www.gravatar.com/avatar/124512541245?d=identicon',
-			lastContact: '2018-04-08T21:24:18.479Z',
-			contacted: 1
+			id: '1',
+			company: "LogMeIn",
+			emailAddresses: [{
+				label: "personal",
+				email: "azzoghayyer@gmail.com",
+			}],
+			familyName: "Zoghayyer",
+			givenName: "Ahmed",
+			jobTitle: "Bug Squasher",
+			middleName: "",
+			phoneNumbers: [{
+				label: "mobile",
+				number: "(444) 444-4444",
+			}],
+			hasThumbnail: true,
+			thumbnailPath: 'https://www.gravatar.com/avatar/1111111111111?d=identicon',
+			postalAddresses: [
+				{
+					street: '123 Fake Street',
+					city: 'Sample City',
+					state: 'CA',
+					region: 'CA',
+					postCode: '90210',
+					country: 'USA',
+					label: 'home'
+				}
+			],
+			birthday: {"year": 1988, "month": 0, "day": 1 }
 		},
 		{
-			id: 2,
-			name: 'Bill Bingbong',
-			avatar: 'https://www.gravatar.com/avatar/623562362362?d=identicon',
-			lastContact: '2018-03-08T21:24:18.479Z',
-			contacted: 2
+			id: '2',
+			company: "LogMeIn",
+			emailAddresses: [{
+				label: "personal",
+				email: "dillongray@gmail.com",
+			}],
+			familyName: "Gray",
+			givenName: "Dillon",
+			jobTitle: "Empty Bucket",
+			middleName: "",
+			phoneNumbers: [{
+				label: "mobile",
+				number: "(555) 555-5555",
+			}],
+			hasThumbnail: true,
+			thumbnailPath: 'https://www.gravatar.com/avatar/222222222222?d=identicon',
+			postalAddresses: [
+				{
+					street: '123 Fake Street',
+					city: 'Sample City',
+					state: 'CA',
+					region: 'CA',
+					postCode: '90210',
+					country: 'USA',
+					label: 'home'
+				}
+			],
+			birthday: {"year": 1987, "month": 5, "day": 10 }
 		},
 		{
-			id: 3,
-			name: 'Chris Cheese',
-			avatar: 'https://www.gravatar.com/avatar/23620996853?d=identicon',
-			lastContact: '2018-01-08T21:24:18.479Z',
-			contacted: 3
+			id: '3',
+			company: "LogMeIn",
+			emailAddresses: [{
+				label: "personal",
+				email: "zizzo.joseph.k@gmail.com",
+			}],
+			familyName: "Zizzo",
+			givenName: "Joseph",
+			jobTitle: "Space Vixen",
+			middleName: "",
+			phoneNumbers: [{
+				label: "mobile",
+				number: "(666) 666-6666",
+			}],
+			hasThumbnail: true,
+			thumbnailPath: 'https://www.gravatar.com/avatar/333333333333?d=identicon',
+			postalAddresses: [
+				{
+					street: '123 Fake Street',
+					city: 'Sample City',
+					state: 'CA',
+					region: 'CA',
+					postCode: '90210',
+					country: 'USA',
+					label: 'home'
+				}
+			],
+			birthday: {"year": 1991, "month": 8, "day": 17 }
 		},
 		{
-			id: 4,
-			name: 'Derrick Dogooder',
-			avatar: 'https://www.gravatar.com/avatar/62633663536?d=identicon',
-			lastContact: '2018-02-10T21:24:18.479Z',
-			contacted: 10
+			id: '4',
+			company: "Google",
+			emailAddresses: [{
+				label: "personal",
+				email: "rochellevee@gmail.com",
+			}],
+			familyName: "Valdez",
+			givenName: "Rochelle",
+			jobTitle: "Vibe Manager",
+			middleName: "",
+			phoneNumbers: [{
+				label: "mobile",
+				number: "(777) 777-7777",
+			}],
+			hasThumbnail: true,
+			thumbnailPath: 'https://www.gravatar.com/avatar/333333333333?d=identicon',
+			postalAddresses: [
+				{
+					street: '123 Fake Street',
+					city: 'Sample City',
+					state: 'CA',
+					region: 'CA',
+					postCode: '90210',
+					country: 'USA',
+					label: 'home'
+				}
+			],
+			birthday: {"year": 1991, "month": 8, "day": 17 }
 		},
-		{
-			id: 5,
-			name: 'Esther Eddleman',
-			avatar: 'https://www.gravatar.com/avatar/72457235223?d=identicon',
-			lastContact: '2018-04-01T21:24:18.479Z',
-			contacted: 8
-		},
-		{
-			id: 6,
-			name: 'Frank Fitzwilly',
-			avatar: 'https://www.gravatar.com/avatar/82752858294?d=identicon',
-			lastContact: '2018-03-22T21:24:18.479Z',
-			contacted: 3
-		}
 	]
 }
 

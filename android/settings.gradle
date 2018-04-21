@@ -1,0 +1,3 @@
+rootProject.name = 'keepintouch'
+
+include ':app'

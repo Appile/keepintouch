@@ -1,0 +1,38 @@
+{
+  "name": "keepintouch",
+  "description": "A CRM for friends and family",
+  "version": "0.1.0",
+  "private": true,
+  "contributors": [
+    "Dillon Gray <dillongray@gmail.com>",
+    "Rochelle Valdez <rochellevee@gmail.com>",
+    "Ahmed Zoghayyer <azzoghayyer@gmail.com>",
+    "Joseph Zizzo <zizzo.joseph.k@gmail.com>"
+  ],
+  "devDependencies": {
+    "babel-preset-react-native-stage-0": "^1.0.1",
+    "jest": "^22.4.3",
+    "jest-react-native": "^18.0.0",
+    "react-test-renderer": "16.2.0"
+  },
+  "scripts": {
+    "start": "react-native start",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "test": "jest"
+  },
+  "jest": {
+    "preset": "react-native"
+  },
+  "dependencies": {
+    "lodash": "^4.17.5",
+    "moment": "^2.22.0",
+    "react": "16.2.0",
+    "react-native": "0.52.0",
+    "react-redux": "^5.0.7",
+    "react-router-native": "^4.2.0",
+    "redux": "^3.7.2",
+    "redux-devtools-extension": "^2.13.2",
+    "redux-logger": "^3.0.6"
+  }
+}

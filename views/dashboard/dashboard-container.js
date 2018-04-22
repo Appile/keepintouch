@@ -12,6 +12,7 @@ const mapStateToProps = (state) => ({
 class DashboardContainer extends React.Component {
 	render = () => (
 		<DashboardView
+			navigation={this.props.navigation}
 			contactsList={this.props.contactsList}
 		/>
 	)

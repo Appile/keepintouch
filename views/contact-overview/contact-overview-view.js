@@ -3,11 +3,16 @@ import {
 	StyleSheet,
 	Text,
 	View,
+	Button,
 } from 'react-native'
 
 const ContactOverviewView = (props) => (
 	<View style={styles.container}>
 		<Text style={styles.text}>Contact Overview</Text>
+		<Button
+			title="Back"
+			onPress={() => props.navigation.goBack()}
+		/>
 	</View>
 )
 

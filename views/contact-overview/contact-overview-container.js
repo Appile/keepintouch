@@ -12,6 +12,7 @@ const mapStateToProps = (state) => ({
 class ContactOverviewContainer extends React.Component {
 	render = () => (
 		<ContactOverviewView
+			navigation={this.props.navigation}
 			contactsList={this.props.contactsList}
 		/>
 	)

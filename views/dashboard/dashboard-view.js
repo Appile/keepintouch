@@ -3,11 +3,16 @@ import {
 	StyleSheet,
 	Text,
 	View,
+	Button,
 } from 'react-native'
 
 const DashboardView = (props) => (
 	<View style={styles.container}>
 		<Text style={styles.text}>Dashboard</Text>
+		<Button
+			title="Go to ContactOverview"
+			onPress={() => props.navigation.navigate('ContactOverview')}
+		/>
 	</View>
 )
 

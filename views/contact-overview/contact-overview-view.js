@@ -3,13 +3,13 @@ import {
 	StyleSheet,
 	Text,
 	View,
-} from 'react-native'
+} from 'react-native';
 
-const ContactOverviewView = (props) => (
+const ContactOverviewView = () => (
 	<View style={styles.container}>
 		<Text style={styles.text}>Contact Overview</Text>
 	</View>
-)
+);
 
 const styles = StyleSheet.create({
 	container: {
@@ -19,6 +19,6 @@ const styles = StyleSheet.create({
 	text: {
 		fontSize: 18,
 	},
-})
+});
 
-export default ContactOverviewView
+export default ContactOverviewView;

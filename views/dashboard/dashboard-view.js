@@ -9,17 +9,20 @@ import {
 const DashboardView = (props) => (
 	<View style={styles.container}>
 		<Text style={styles.text}>Dashboard</Text>
-		<Button
-			title="Go to ContactOverview"
-			onPress={() => props.navigation.navigate('ContactOverview')}
-		/>
+		{props.contactsList.map(contact => (
+			<Button
+				key={contact.id}
+				title={props.contactByIdFullName(contact.id)}
+				onPress={() => props.navigation.navigate('ContactOverview', { name: props.contactByIdFullName(contact.id)})}
+			/>
+		))}
 	</View>
 )
 
 const styles = StyleSheet.create({
 	container: {
 		flex: 1,
-		paddingTop: 34,
+		padding: 20,
 	},
 	text: {
 		fontSize: 18,

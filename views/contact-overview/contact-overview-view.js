@@ -19,7 +19,7 @@ const ContactOverviewView = (props) => (
 const styles = StyleSheet.create({
 	container: {
 		flex: 1,
-		paddingTop: 34,
+		padding: 20,
 	},
 	text: {
 		fontSize: 18,

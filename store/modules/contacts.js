@@ -146,6 +146,10 @@ export const contactsOverXDays = (state, over, under) => state.contacts.list.fil
 export const contactsOver7Days = (state) => contactsOverXDays(state, 7, 14)
 export const contactsOver14Days = (state) => contactsOverXDays(state, 14, 30)
 export const contactsOver30Days = (state) => contactsOverXDays(state, 30)
+export const contactByIdFullName = (state, id) => {
+	const contact = state.contacts.list.find(contact => contact.id === id);
+	return contact ? `${contact.givenName} ${contact.familyName}` : 'Unknown Name';
+};
 
 // Actions
 export const addContact = (contact) => ({

@@ -11,8 +11,11 @@
   ],
   "devDependencies": {
     "babel-preset-react-native-stage-0": "^1.0.1",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-to-json": "^3.3.3",
     "jest": "^22.4.3",
     "jest-react-native": "^18.0.0",
+    "react-dom": "^16.3.2",
     "react-test-renderer": "16.2.0"
   },
   "scripts": {
@@ -22,9 +25,19 @@
     "test": "jest"
   },
   "jest": {
-    "preset": "react-native"
+    "preset": "react-native",
+    "transformIgnorePatterns": [
+      "node_modules/(?!react-native|react-navigation)/"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "setupFiles": [
+      "./setupTests.js"
+    ]
   },
   "dependencies": {
+    "enzyme": "^3.3.0",
     "lodash": "^4.17.5",
     "moment": "^2.22.0",
     "react": "16.2.0",

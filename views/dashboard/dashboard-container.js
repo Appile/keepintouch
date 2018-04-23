@@ -1,5 +1,5 @@
-import React from 'react'
-import { connect } from 'react-redux'
+import React from 'react';
+import { connect } from 'react-redux';
 import {
 	contactsList,
 } from '../../store/modules/contacts';
@@ -7,7 +7,7 @@ import DashboardView from './dashboard-view';
 
 const mapStateToProps = (state) => ({
 	contactsList: contactsList(state),
-})
+});
 
 class DashboardContainer extends React.Component {
 	render = () => (
@@ -17,4 +17,4 @@ class DashboardContainer extends React.Component {
 	)
 }
 
-export default connect(mapStateToProps)(DashboardContainer)
+export default connect(mapStateToProps)(DashboardContainer);

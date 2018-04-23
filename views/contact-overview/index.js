@@ -1,3 +1,3 @@
-import ContactOverviewContainer from './contact-overview-container'
+import ContactOverviewContainer from './contact-overview-container';
 
-export default ContactOverviewContainer
+export default ContactOverviewContainer;

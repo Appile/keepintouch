@@ -1,5 +1,5 @@
-import React from 'react'
-import { connect } from 'react-redux'
+import React from 'react';
+import { connect } from 'react-redux';
 import {
 	contactsList,
 } from '../../store/modules/contacts';
@@ -7,7 +7,7 @@ import ContactOverviewView from './contact-overview-view';
 
 const mapStateToProps = (state) => ({
 	contactsList: contactsList(state),
-})
+});
 
 class ContactOverviewContainer extends React.Component {
 	render = () => (
@@ -17,4 +17,4 @@ class ContactOverviewContainer extends React.Component {
 	)
 }
 
-export default connect(mapStateToProps)(ContactOverviewContainer)
+export default connect(mapStateToProps)(ContactOverviewContainer);

@@ -3,13 +3,13 @@ import {
 	StyleSheet,
 	Text,
 	View,
-} from 'react-native'
+} from 'react-native';
 
-const DashboardView = (props) => (
+const DashboardView = () => (
 	<View style={styles.container}>
 		<Text style={styles.text}>Dashboard</Text>
 	</View>
-)
+);
 
 const styles = StyleSheet.create({
 	container: {
@@ -19,6 +19,6 @@ const styles = StyleSheet.create({
 	text: {
 		fontSize: 18,
 	},
-})
+});
 
 export default DashboardView;
